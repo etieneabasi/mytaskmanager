@@ -3,7 +3,7 @@
 namespace Etieneabasi\MyTaskManager\Controllers;
 
 use Illuminate\Http\Request;
-use Etieneabasi\MyTaskManager\Models\Category;
+use Etieneabasi\MyTaskManager\Controllers\Category;
 use Etieneabasi\MyTaskManager\Controllers\Task;
 class CategoryController extends Controller
 {
@@ -16,7 +16,7 @@ class CategoryController extends Controller
         public function index()
         {
             $cats = Category::all();
-            return view('etieneabasi::task', ["cats" => $cats]);
+            return view('mytaskmanager::task', ["cats" => $cats]);
     
         }
     
@@ -63,7 +63,7 @@ class CategoryController extends Controller
         {
             //
             $cats = Category::all();
-            return view("etieneabasi::task",["cats"=>$cats]);
+            return view("mytaskmanager::task",["cats"=>$cats]);
         }
     
         /**
@@ -77,7 +77,7 @@ class CategoryController extends Controller
             //
             $cats =Category::find($id);
           
-            return view("etieneabasi::task",["cats"=>$cats]);
+            return view("mytaskmanager::task",["cats"=>$cats]);
         }
     
         /**

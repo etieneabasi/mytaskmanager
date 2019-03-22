@@ -1,4 +1,4 @@
-@extends('mytaskmanager::master')
+@extends('etieneabasi::master')
 @section('title')
 Task
 @endsection

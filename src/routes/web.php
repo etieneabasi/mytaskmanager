@@ -15,7 +15,7 @@
 //     return view('task');
 // });
 
-Route::namespace ('Etieneabasi\MyTaskManager\Controllers')->group(function () {
+Route::middleware("web")->namespace('Etieneabasi\MyTaskManager\Controllers')->group(function () {
 Route::post('task','CategoryController@show');
 Route::get('task/store','TaskController@store')->name("task.store");
 Route::get('task/store','CategoryController@store')->name("category.store");

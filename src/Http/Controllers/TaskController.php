@@ -3,8 +3,8 @@
 namespace Etieneabasi\MyTaskManager\Controllers;
 
 use Illuminate\Http\Request;
-use Etieneabasi\MyTaskManager\Models\Task;
-use Etieneabasi\MyTaskManager\Models\Category;
+use Etieneabasi\MyTaskManager\Controllers\Task;
+use Etieneabasi\MyTaskManager\Controllers\Category;
 class TaskController extends Controller
 {
     /**
@@ -16,7 +16,7 @@ class TaskController extends Controller
     {
         $task = Task::all();
         $cats = Category::all();
-        return view('etieneabasi::task', ["cats" => $cats,'task'=>$task]);
+        return view('mytaskmanager::task', ["cats" => $cats,'task'=>$task]);
 
     }
     public function index()
@@ -28,7 +28,7 @@ class TaskController extends Controller
             //task is a function from Category model
             $currentTask = $currentCategory->task ?? null;
         }
-        return view('etieneabasi::task', ["cats" => $cats,'task'=>$currentTask ?? null, 'current_category'=>$currentCategory ?? null]);
+        return view('mytaskmanager::task', ["cats" => $cats,'task'=>$currentTask ?? null, 'current_category'=>$currentCategory ?? null]);
 
     }
 
@@ -97,7 +97,7 @@ class TaskController extends Controller
     public function show()
     {
         $task = Task::all();
-        return view("etieneabasi::task",["task"=>$task]);
+        return view("mytaskmanager::task",["task"=>$task]);
     }
 
     /**

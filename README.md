@@ -36,7 +36,7 @@ Please see the [changelog](changelog.md) for more information on what has change
 
 Developed by
 
-Etieneabasi Sunday Email:abasi.asuquo@gmail.com tweetter:@etieneabasi2
+Etieneabasi Sunday Email: abasi.asuquo@gmail.com twitter: @etieneabasi2
 
 ## Testing
 

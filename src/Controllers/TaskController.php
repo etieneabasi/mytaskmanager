@@ -59,8 +59,8 @@ class TaskController extends Controller
 
         $cats->save();
 
-            return back()->with('message','Successfully saved');
-        
+        Alert::Success('Success Message','Category saved Successfully');
+        return back();        
     }
 
     /**
@@ -84,8 +84,9 @@ class TaskController extends Controller
         $task->category_id = $request->category;
         
         $task->save();    
-            return back()->with('message','Successfully Deleted');
-        
+        Alert::Success('Success Message','Task saved Successfully');
+
+        return back();        
     }
 
     /**
@@ -157,8 +158,9 @@ class TaskController extends Controller
             $task = Task::find($id);
             $task-> delete();
     
-                return back()->with('message','Successfully Deleted');
-         
+            Alert::Success('Success Message','Task Deleted Successfully');
+
+            return back();         
     
         
     }

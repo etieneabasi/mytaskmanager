@@ -3,6 +3,7 @@
 namespace Etieneabasi\MyTaskManager\Controllers;
 
 use Illuminate\Http\Request;
+use Alert;
 use Etieneabasi\MyTaskManager\Controllers\Category;
 use Etieneabasi\MyTaskManager\Controllers\Task;
 class CategoryController extends Controller
@@ -90,7 +91,7 @@ class CategoryController extends Controller
         public function update(Request $request, $id)
         {
             $request->validate([
-                'name1'=>'required|string',
+                'name'=>'required|string',
               
             ]);
     

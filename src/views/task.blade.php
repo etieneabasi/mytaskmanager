@@ -12,7 +12,7 @@ Task
      
       <div class="card uper">
         <div class="card-header">
-          Task Category
+          Task Category <span class="btn btn-primary" style="border-radius:0px">Total Task : {{count($cats)}}</span>
         </div>
         <div class="card-body">
           @if($errors->has("category"))
@@ -89,7 +89,7 @@ Task
       <div class="col-sm-7">
         <div class="card uper">
           <div class="card-header card-holder category-title">
-            Task  {{$current_category ? "under $current_category->name" :"select a category to view task"}}
+            Task  {{$current_category ? "under $current_category->name" :"select a category to view task"}} <span class="btn btn-primary" style="border-radius:0px"></span>
           </div>
           <div class="card-body">
             @if($errors->has("taskname"))

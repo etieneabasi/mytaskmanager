@@ -12,7 +12,8 @@
     "homepage": "https://github.com/etieneabasi/mytaskmanager",
     "keywords": ["Laravel", "MyTaskManager"],
     "require": {
-        "illuminate/support": "~5"
+        "illuminate/support": "~5",
+        "uxweb/sweet-alert":"~2"
     },
     "require-dev": {
         "phpunit/phpunit": "~7.0",

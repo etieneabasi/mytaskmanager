@@ -49,8 +49,8 @@ class CategoryController extends Controller
     
             $cats->save();
     
-                return back()->with('message','Successfully saved');
-            
+            Alert::success('Success Message','Category saved Successfully');
+            return back();            
         }
     
         /**
@@ -98,7 +98,8 @@ class CategoryController extends Controller
             $cats->name= $request->get('name');
     
             $cats->save();
-                return back()->with('message','Successfully Updated');
+ Alert::Success('message','Category Updated Successfully');
+                return back();
         }
     
         /**
@@ -112,8 +113,8 @@ class CategoryController extends Controller
             $cat = Category::find($id);
             $cat-> delete();
     
-                return back()->with('message','Successfully Deleted');
-          
+            Alert::Success('message','Category Deleted Successfully');
+          return back();
             
     
         }

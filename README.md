@@ -9,7 +9,7 @@ This is where your description should go. Take a look at [contributing.md](contr
 it support laravel 5.8 and later
 
 ## Installation
-PHP 7.3.3+ or HHVM 3.3+, and Composer are required.
+PHP 5.4+ or HHVM 3.3+, and Composer are required.
 
 To get the latest version of Laravel Taskmanager, simply add the following line to the require block of your composer.json file.
 Via Composer

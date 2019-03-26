@@ -15,7 +15,7 @@ To get the latest version of Laravel Taskmanager, simply add the following line 
 Via Composer
 
 ``` bash
-$ composer require etieneabasi/mytaskmanager
+composer require etieneabasi/mytaskmanager
 ```
 You'll then need to run composer install or composer update to download it and have the autoloader updated.
 
@@ -25,7 +25,9 @@ You need to run migrations to create tables
 
 You can publish the configuration file using this command:
 
+``` bash
 php artisan vendor:publish --tag=public
+```
 
 Then you are ready to get runnings. Just visit
 ## Change log

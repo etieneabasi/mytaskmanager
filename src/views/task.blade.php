@@ -12,7 +12,7 @@ Task
      
       <div class="card uper">
         <div class="card-header">
-          Task Category <span class="btn btn-primary" style="border-radius:0px">Total Task : {{count($cats)}}</span>
+          Task Category <span class="btn btn-primary" style="border-radius:0px">Total Category : {{count($cats)}}</span>
         </div>
         <div class="card-body">
           @if($errors->has("category"))

@@ -8,7 +8,7 @@ Task
 
   <div class="row bg-light pt-5 pb-5">
 
-    <div class="col-sm-5">
+    <div class="col-sm-5 pb-5">
      
       <div class="card uper">
         <div class="card-header">

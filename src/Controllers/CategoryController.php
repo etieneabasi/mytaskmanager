@@ -90,7 +90,7 @@ class CategoryController extends Controller
         public function update(Request $request, $id)
         {
             $request->validate([
-                'name1'=>'required|string',
+                'name'=>'required|string',
               
             ]);
     

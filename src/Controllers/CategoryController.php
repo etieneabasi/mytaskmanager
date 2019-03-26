@@ -1,7 +1,7 @@
 <?php
 
 namespace Etieneabasi\MyTaskManager\Controllers;
-
+use Alert;
 use Illuminate\Http\Request;
 use Etieneabasi\MyTaskManager\Models\Category;
 use Etieneabasi\MyTaskManager\Controllers\Task;

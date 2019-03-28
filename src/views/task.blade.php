@@ -107,7 +107,7 @@ Task
         </div>
       </div>
       <div class="col-sm-12">
-        <div class="card uper" style="border-radius:0px">>
+        <div class="card uper" style="border-radius:0px">
           <div class="card-header card-holder category-title">
           <span>Task Under Category Title : {{$current_category ? " $current_category->name" :"Select a category to Add / View task"}} </span>
           </div>

@@ -107,9 +107,9 @@ Task
         </div>
       </div>
       <div class="col-sm-12">
-        <div class="card uper">
+        <div class="card uper" style="border-radius:0px">>
           <div class="card-header card-holder category-title">
-          <span> {{$current_category ? " $current_category->name" :"Select a category to Add / View task"}} </span>
+          <span>Task Under Category Title : {{$current_category ? " $current_category->name" :"Select a category to Add / View task"}} </span>
           </div>
           <div class="card-body">
             @if($errors->has("taskname"))
@@ -120,7 +120,7 @@ Task
               
               <input type="hidden" name="category" id="categoryId" value="{{$current_category->id ?? null}}">                
               <div class="input-group">
-                <input type="text" name="taskname" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input type="text" name="taskname" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" style="border-radius:0px">>
                 <button class="btn btn-secondary" type="submit" style="border-radius:0px">Add Task</button>
                 
               </div>
@@ -252,8 +252,6 @@ $("#exampleModalCenter").on('show.bs.modal',function(eventTask){
 
   $("#editedUpdate").attr('action',urlf+'/'+id);
 })
-
-      
-     </script>
-     @endsection
+</script>
+@endsection
 

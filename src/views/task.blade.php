@@ -8,7 +8,7 @@ Task
 <div class="col-sm-3"></div>
 <div class="col-sm-6">
 <p>
-<a class="btn btn-link" type="button"  data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Click to Add Category</a>
+<a class="btn btn-link" type=""  data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Click to Add Category</a>
 </p>
     <div class="col-sm-12 pb-5">
     <div class="row">
@@ -18,12 +18,12 @@ Task
   <div class=" uper">
     <div class=" row" id="headingOne">
       <h5 class="mb-0">
-       <p><a class="btn btn-link " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       <p><a class="btn btn-link " type="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           Click to Add Category
         </a>
       </p></h5>
       <h5 class="mb-0">
-       <p> <a class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+       <p> <a class="btn btn-link collapsed" type="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           Click to View All Categories
         </a>
      </p> </h5>

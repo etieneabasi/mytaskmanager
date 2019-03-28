@@ -120,7 +120,7 @@ Task
               
               <input type="hidden" name="category" id="categoryId" value="{{$current_category->id ?? null}}">                
               <div class="input-group">
-                <input type="text" name="taskname" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" style="border-radius:0px">>
+                <input type="text" name="taskname" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" style="border-radius:0px">
                 <button class="btn btn-secondary" type="submit" style="border-radius:0px">Add Task</button>
                 
               </div>

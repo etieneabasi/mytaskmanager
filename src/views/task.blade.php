@@ -151,7 +151,7 @@ Task
                      {{ $array->name }}
                      
                      @endif
-                     <br>  <span> <small class="text-dark">{{ $cat->created_at->toFormattedDateString()}}</small></span>
+                     <br>  <span> <small class="text-primary">{{ $cat->created_at->toFormattedDateString()}}</small></span>
                    
                    </td>
                 

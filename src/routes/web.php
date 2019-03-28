@@ -21,7 +21,7 @@ Route::get('task/store','TaskController@store')->name("task.store");
 Route::get('task/store','CategoryController@store')->name("category.store");
 Route::post('task/update/{id}','CategoryController@update')->name("category.update");
 Route::get('category/delete/{id}','CategoryController@destroy')->name("cat.destroy");
-Route::post('task/delete/{id}','TaskController@destroy')->name("tasks.destroy");
+Route::get('task/delete/{id}','TaskController@destroy')->name("tasks.destroy");
 Route::get('task','TaskController@index')->name("tasks.index");
 Route::get('task/store/category','TaskController@storeCat')->name("category.store");
 Route::get('task/store','TaskController@store')->name("task.store");

@@ -26,6 +26,8 @@ Route::get('task','TaskController@index')->name("tasks.index");
 Route::get('task/store/category','TaskController@storeCat')->name("category.store");
 Route::get('task/store','TaskController@store')->name("task.store");
 Route::post('task/check','TaskController@checkFunction')->name("task.check");
+Route::post('task/updateTask/{id}','TaskController@updateTask')->name("task.updateTask");
+
 });
 
 

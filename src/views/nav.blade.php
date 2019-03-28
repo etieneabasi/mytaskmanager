@@ -1,7 +1,6 @@
-<div class="container bg-primary pb-5">
-<nav class="navbar navbar-expand-lg navbar-light">
-
-  <a class="navbar-brand text-white" href="#">LTask</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+<div class="container">
+  <a class="navbar-brand text-white" href="#">TaskManager Using Laravel</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -13,5 +12,5 @@
      
     </ul>
   </div>
+  </div>
 </nav>
-</div>

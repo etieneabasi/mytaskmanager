@@ -32,13 +32,6 @@ class TaskController extends Controller
 
     }
 
-    // public function index()
-    // {
-    //     $cats = Category::all();
-    //     return view('task', ["cats" => $cats]);
-
-    // }
-
 
     /**
      * Show the form for creating a new resource.
@@ -141,10 +134,22 @@ class TaskController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-        //
-    }
+        public function updateTask(Request $request, $id)
+        {
+            $request->validate([
+                'name'=>'required|string'
+              
+            ]);
+            $tasks = Task::find($id);
+            $tasks->name= $request->name;
+    
+            $tasks->save();
+            //  dd($task->save());
+            Alert::Success('message','Task Updated Successfully');
+                return back();
+         
+        }
+    
     
     /**
      * Remove the specified resource from storage.

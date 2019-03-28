@@ -19,6 +19,8 @@ class CreateTasksTable extends Migration
             $table->unsignedInteger('category_id');
             $table->boolean('completed')->default(0);
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

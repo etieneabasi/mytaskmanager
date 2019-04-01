@@ -11,34 +11,49 @@ it support laravel 5.8 and later
 ## Installation
 PHP 5.4+ or HHVM 3.3+, and Composer are required.
 
-To get the latest version of Laravel Taskmanager, simply add the following line to the require block of your composer.json file.
+latest version of Laravel Taskmanager, simply add the following line to the require block of your composer.json file.
 Via Composer
 
 ``` bash
-composer require etieneabasi/mytaskmanager
+composer require etieneabasi/mytaskmanager:dev-master
 ```
-You'll then need to run composer install or composer update to download it and have the autoloader updated.
+next run
 
-If you are using Laravel for the first time and the key is not generated yet, run php artisan key:generate.
+``` bash
+composer install
+```
+  or
+
+``` bash
+composer update 
+```
+To download it and have the autoloader updated.
+``` bash
+php artisan key:generate
+```
+If you are using Laravel for the first time and the key is not generated yet,
 ## Usage
-You need to run migrations to create tables
 
-You can publish the configuration file using this command:
+Run migrations to create tables
+
+``` bash
+php artisan migrate
+```
+Publish the configuration file using this command:
 
 ``` bash
 php artisan vendor:publish --tag=public
 ```
-
-Then you are ready to get runnings. Just visit
+Good Luck. Just visit
 ## Change log
 
-http://{{site-url}}/task example: etieneabasi/mytaskmanager/task
+http://{{site-url}}/task example: 127.0.0.1:8000/task
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
 
 Developed by
 
-Etieneabasi Sunday Email: abasi.asuquo@gmail.com twitter: @etieneabasi2
+Etieneabasi Sunday twitter: @etieneabasi2
 
 ## Testing
 

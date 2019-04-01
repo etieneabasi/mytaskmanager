@@ -50,7 +50,7 @@ class CategoryController extends Controller
             $cats->save();
     
             Alert::success('Success Message','Category saved Successfully');
-            return back();            
+            return back()->with('message','Category Successfully saved');            
         }
     
         /**
@@ -99,7 +99,7 @@ class CategoryController extends Controller
     
             $cats->save();
  Alert::Success('message','Category Updated Successfully');
-                return back();
+                return back()->with('message','Category Successfully Updated');
         }
     
         /**
@@ -114,7 +114,7 @@ class CategoryController extends Controller
             $cat-> delete();
     
             Alert::Success('message','Category Deleted Successfully');
-          return back();
+          return back()->with('message','Successfully Deleted');
             
     
         }

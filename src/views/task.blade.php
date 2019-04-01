@@ -3,22 +3,20 @@
 Task
 @endsection
 @section('content')
+
 <div class="container mt-5">
   <div class="row pb-5">
 <div class="col-sm-3"></div>
 <div class="col-sm-6">
-<p>
-<a class="btn btn-link" type=""  data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Click to Add Category</a>
-</p>
+
     <div class="col-sm-12 pb-5">
     <div class="row">
   <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
     <div class="accordion" id="accordionExample">
   <div class=" uper">
     <div class=" row" id="headingOne">
       <h5 class="mb-0">
-       <p><a class="btn btn-link " type="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       <p><a class="btn btn-link addCat " type="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           Click to Add Category
         </a>
       </p></h5>
@@ -32,6 +30,9 @@ Task
     </div>    
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">   
         <div class="">
+        @if($errors->has("category"))
+            <p class="alert alert-info">{{ $errors->first('category') }}</p>
+            @endif
           <form action="{{route('category.store')}}" method="get">
             <div class="input-group ">
               @csrf
@@ -77,7 +78,7 @@ Task
          </div>
          </div>
          </div>
-         </div>
+
          <!-- Modal -->
          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-center" role="document">
@@ -126,7 +127,6 @@ Task
               </div>
             </form>
           </div>
-
 
           <div class="container">
             <div class="row">
@@ -205,8 +205,6 @@ Task
                   
         </div>
       </div>
-
-
       @endsection
 
       @section('script')
